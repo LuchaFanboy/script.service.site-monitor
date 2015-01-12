@@ -12,12 +12,12 @@ while not xbmc.abortRequested:
 	if server1 == '':
 		continue
 	notify = __addon__.getSetting('notify')
-	if notify:
+	if notify == "true":
 		line1 = 'Checking %s ...' % (server1)
 		xbmcgui.Dialog().notification(__addonname__, line1, __icon__, __time__)
 	response = os.system('ping -c 1 ' + server1)
 	if response == 0:
-		if notify:
+		if notify == "true":
 			line1 = '%s is up.' % (server1)
 			xbmcgui.Dialog().notification(__addonname__, line1, __icon__, __time__)
 	else:
