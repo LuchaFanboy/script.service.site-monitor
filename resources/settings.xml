@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-	<category label="30001">
-		<setting label="30002" type="text" id="site1" default="http://home.vicenteobregon.com"/>
+	<category label="30000">
+		<setting label="30001" type="text" id="song" default="http://www.radio.ch/media/stream/radiozuerisee128k.m3u"/>
+		<setting label="30002" type="text" id="server1" default="home.vicenteobregon.com"/>
 	</category>
 </settings>

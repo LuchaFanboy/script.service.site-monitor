@@ -20,8 +20,12 @@ msgstr ""
 "X-Generator: Poedit 1.5.7\n"
 
 # English
-msgctxt "#30001"
+msgctxt "#30000"
 msgid "General"
+msgstr ""
+
+msgctxt "#30001"
+msgid "Song"
 msgstr ""
 
 msgctxt "#30002"
