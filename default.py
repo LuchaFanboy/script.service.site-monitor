@@ -25,4 +25,10 @@ while not xbmc.abortRequested:
 		xbmcgui.Dialog().notification(__addonname__, line1, __icon__, __time__)
 		song = __addon__.getSetting('song')
 		xbmc.Player().play(song)
-	time.sleep(60)
+	m = int(__addon__.getSetting('check'))
+	for i in range(0, m):
+		check = int(__addon__.getSetting('check'))
+		if m == check:
+			time.sleep(60)
+		else:
+			break
