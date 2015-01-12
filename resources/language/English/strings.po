@@ -25,9 +25,17 @@ msgid "General"
 msgstr ""
 
 msgctxt "#30001"
-msgid "Song"
+msgid "Notify"
 msgstr ""
 
 msgctxt "#30002"
+msgid "Check"
+msgstr ""
+
+msgctxt "#30003"
+msgid "Song"
+msgstr ""
+
+msgctxt "#30004"
 msgid "Site #1"
 msgstr ""
