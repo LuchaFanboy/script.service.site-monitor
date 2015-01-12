@@ -1,0 +1,29 @@
+# XBMC Media Center language file
+# Addon Name: XBMC Site Monitor
+# Addon id: script.service.site-monitor
+# Addon version: 0.0.1
+# Addon Provider: luchafanboy
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Main Translation Project (Frodo)\n"
+"Report-Msgid-Bugs-To: http://trac.xbmc.org/\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2015-01-11 23:49-0700\n"
+"Last-Translator: Vicente Obregon <desarrollogis@gmail.com>\n"
+"Language-Team: English (http://www.transifex.com/projects/p/XBMC-Main-Frodo/"
+"language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.7\n"
+
+# English
+msgctxt "#30001"
+msgid "General"
+msgstr ""
+
+msgctxt "#30002"
+msgid "Site #1"
+msgstr ""
