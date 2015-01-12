@@ -1,2 +1,6 @@
+v0.0.4
+Notifications can be disabled when server is up.
+Check time can go from one minute to sixty.
+
 v0.0.3
- - First official revision
+First official revision
