@@ -1,3 +1,6 @@
+v0.1.0
+Console can be used.
+
 v0.0.4
 Notifications can be disabled when server is up.
 Check time can go from one minute to sixty.
