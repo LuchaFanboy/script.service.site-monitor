@@ -3,7 +3,7 @@
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
-	<extension point="xbmc.service" library="default.py" start="startup">
+	<extension point="xbmc.service" library="addon.py" start="startup">
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Provides a site monitor for XBMC.</summary>
