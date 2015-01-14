@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-	<category label="30000">
-		<setting label="30001" type="bool" id="notify" default="true"/>
-		<setting label="30002" type="slider" id="check" default="1" range="1,60" option="int"/>
-		<setting label="30003" type="slider" id="count" default="2" range="1,10" option="int"/>
-		<setting label="30004" type="text" id="song" default="http://www.radio.ch/media/stream/radiozuerisee128k.m3u"/>
-		<setting label="30005" type="text" id="server1" default="home.vicenteobregon.com"/>
+	<category label="32000">
+		<setting label="32001" type="bool" id="notify" default="true"/>
+		<setting label="32002" type="slider" id="check" default="1" range="1,60" option="int"/>
+		<setting label="32003" type="slider" id="count" default="2" range="1,10" option="int"/>
+		<setting label="32004" type="text" id="song" default="http://www.radio.ch/media/stream/radiozuerisee128k.m3u"/>
+		<setting label="32005" type="text" id="server1" default="home.vicenteobregon.com"/>
 	</category>
 </settings>
