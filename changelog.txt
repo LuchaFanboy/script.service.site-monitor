@@ -1,12 +1,12 @@
 v0.1.1
-Play song after "count" fails.
+- Play song after "count" fails.
 
 v0.1.0
-Console can be used.
+- Console can be used.
 
 v0.0.4
-Notifications can be disabled when server is up.
-Check time can go from one minute to sixty.
+- Notifications can be disabled when server is up.
+- Check time can go from one minute to sixty.
 
 v0.0.3
-First official revision
+- First official revision
