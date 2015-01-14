@@ -43,6 +43,7 @@ while not model.abortRequested():
 				if notify == True:
 					line1 = '%s is up.' % (server)
 					model.notification(line1)
+				count = model.getCount()
 				sleep = model.getSleep(False)
 			else:
 				line1 = '%s is down.' % (server)
