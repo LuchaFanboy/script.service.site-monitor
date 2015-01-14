@@ -33,9 +33,13 @@ msgid "Check"
 msgstr ""
 
 msgctxt "#30003"
-msgid "Song"
+msgid "Count"
 msgstr ""
 
 msgctxt "#30004"
+msgid "Song"
+msgstr ""
+
+msgctxt "#30005"
 msgid "Site #1"
 msgstr ""

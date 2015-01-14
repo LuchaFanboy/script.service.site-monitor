@@ -17,6 +17,7 @@ class Model(object):
 	def read(self):
 		self._notify = (self._xbmcaddon.getSetting('notify') == 'true')
 		self._check = int(self._xbmcaddon.getSetting('check'))
+		self._count = int(self._xbmcaddon.getSetting('count'))
 		self._song = self._xbmcaddon.getSetting('song')
 		self._server = self._xbmcaddon.getSetting('server1')
 
@@ -26,6 +27,9 @@ class Model(object):
 			return True
 		check = int(self._xbmcaddon.getSetting('check'))
 		if self._check != check:
+			return True
+		count = int(self._xbmcaddon.getSetting('count'))
+		if self._count != count:
 			return True
 		song = self._xbmcaddon.getSetting('song')
 		if self._song != song:
@@ -40,6 +44,9 @@ class Model(object):
 
 	def getCheck(self):
 		return self._check
+
+	def getCount(self):
+		return self._count
 
 	def getSong(self):
 		return self._song

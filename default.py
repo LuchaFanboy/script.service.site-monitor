@@ -17,19 +17,24 @@ except ImportError:
 
 line1 = 'Starting site monitor...'
 model.notification(line1)
+first = True
 while not model.abortRequested():
-	model.read()
-	server = model.getServer()
+	if first or model.hasChanged():
+		model.read()
+		notify = model.getNotify()
+		check = model.getCheck()
+		count = model.getCount()
+		song = model.getSong()
+		server = model.getServer()
+		first = False
 	if server == '':
 		continue
-	check = model.getCheck()
 	for i in range(0, check):
 		if model.abortRequested():
 			break
 		if model.hasChanged():
 			break
 		if i == 0:
-			notify = model.getNotify()
 			if notify == True:
 				line1 = 'Checking %s ...' % (server)
 				model.notification(line1)
@@ -42,7 +47,9 @@ while not model.abortRequested():
 			else:
 				line1 = '%s is down.' % (server)
 				model.notification(line1)
-				song = model.getSong()
-				model.play(song)
+				count = count - 1
+				if count == 0:
+					model.play(song)
+					count = model.getCount()
 				sleep = model.getSleep(True)
 		time.sleep(sleep)

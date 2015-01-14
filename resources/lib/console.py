@@ -28,6 +28,9 @@ class Model(object):
 	def getCheck(self):
 		return 1
 
+	def getCount(self):
+		return 3
+
 	def getNotify(self):
 		return True
 
