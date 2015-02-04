@@ -69,6 +69,6 @@ class Model(object):
 		self._xbmc.Player().play(song)
 
 	def getSleep(self, error):
-		if !error:
+		if not error:
 			self._arduino = False
 		return 60
