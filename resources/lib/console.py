@@ -8,7 +8,7 @@ def handler(signum, frame):
 
 class Model(object):
 	def __init__(self):
-		self.m_arduino = False
+		self._arduino = False
 		signal.signal(signal.SIGINT, handler)
 
 	def notification(self, line1):
@@ -39,13 +39,13 @@ class Model(object):
 		return '\a'
 
 	def play(self, song):
-		if self.m_arduino == False:
+		if self._arduino == False:
 			try:
 				ser = serial.Serial('/dev/arduino', 9600)
 				time.sleep(2)
 				ser.write(b'0')
 				ser.close()
-				self.m_arduino = True
+				self._arduino = True
 			except:
 				pass
 		print song
@@ -54,5 +54,5 @@ class Model(object):
 		if error:
 			return 1
 		else:
-			self.m_arduino = False;
+			self._arduino = False;
 			return 60

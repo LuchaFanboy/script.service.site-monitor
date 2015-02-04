@@ -1,3 +1,6 @@
+v0.1.2
+- Send 0 to arduino serial.
+
 v0.1.1
 - Play song after "count" fails.
 

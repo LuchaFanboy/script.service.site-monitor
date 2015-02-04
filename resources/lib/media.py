@@ -1,3 +1,4 @@
+import serial, time;
 
 class Model(object):
 	def __init__(self, xbmc, xbmcgui, xbmcaddon):
@@ -7,6 +8,7 @@ class Model(object):
 		self._addonname = self._xbmcaddon.getAddonInfo('name')
 		self._icon = self._xbmcaddon.getAddonInfo('icon')
 		self._time = 5000
+		self._arduino = False
 
 	def notification(self, line1):
 		self._xbmcgui.Dialog().notification(self._addonname, line1, self._icon, self._time)
@@ -55,7 +57,18 @@ class Model(object):
 		return self._server
 
 	def play(self, song):
+		if self._arduino == False:
+			try:
+				ser = serial.Serial('/dev/arduino', 9600)
+				time.sleep(2)
+				ser.write(b'0')
+				ser.close()
+				self._arduino = True
+			except:
+				pass
 		self._xbmc.Player().play(song)
 
 	def getSleep(self, error):
+		if !error:
+			self._arduino = False
 		return 60
